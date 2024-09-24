@@ -3,7 +3,7 @@
     <header>
       <navbar/>  
     </header>
-    <main :style="{marginTop: heightNavbar}" class="flex-grow">
+    <main :style="{marginTop: heightNavbar}" class="flex-grow flex flex-col items-center">
       <!-- <home/> -->
       <router-view></router-view> 
     </main>

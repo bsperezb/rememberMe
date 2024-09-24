@@ -8,11 +8,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Home',
     component: () => import ('../pages/Home/index.vue')
   },
-  {
-    path: '/test',
-    name: 'test',
-    component: () => import('../components/Test.vue')
-  }
+//   {
+//     path: '/test',
+//     name: 'test',
+//     component: () => import('../components/Test.vue')
+//   }
 ];
 
 // Crea el router usando createRouter
