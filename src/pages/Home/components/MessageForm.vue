@@ -1,15 +1,15 @@
 <template>
-  <div class="bg-gray-50 dark:bg-gray-900">
-    <div
+  <!-- <div class="bg-gray-50 dark:bg-gray-900"> -->
+    <!-- <div
       class="flex flex-col items-center justify-center px-6 py-8 mx-auto lg:py-0"
-    >
-      <a
+    > -->
+      <!-- <a
         href="#"
         class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white"
       >
         <div v-html="iconWhatsapp"></div>
         Programa tu Mensaje de Recordatorio
-      </a>
+      </a> -->
       <div
         class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700"
       >
@@ -79,13 +79,14 @@
           </form>
         </div>
       </div>
-    </div>
-  </div>
+    <!-- </div> -->
+  <!-- </div> -->
 </template>
 
 <script setup lang="ts">
 import {ref, Ref, onMounted} from 'vue'
-import { loadIcon } from '../../../icons/index';
+// import { loadIcon } from '../../../icons/index';
+import { loadIcon } from '@/icons/index';
 
 const iconWhatsapp:Ref = ref('')  
 

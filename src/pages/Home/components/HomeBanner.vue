@@ -1,9 +1,9 @@
 <template>
   <section
     :style="{ backgroundImage: `url(${bannerRoute})` }"
-    class="bg-center bg-no-repeat"
+    class="bg-center bg-no-repeat h-96 banner-style"
   >
-    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-24">
       <h1
         class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
       >
@@ -39,12 +39,12 @@
             />
           </svg>
         </a>
-        <router-link
+        <!-- <router-link
           to="test"
           class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
         >
           Conócenos
-    </router-link>
+    </router-link> -->
       </div>
     </div>
   </section>
@@ -52,10 +52,11 @@
 
 <script setup lang="ts">
 import { ref, Ref } from "vue";
-const bannerRoute:Ref = ref<string>(
-  "http://www.wapicenter.com/img/seq-slider/bgSmartPhone5.jpg"
-);
+const bannerRoute: Ref<string> = ref(new URL('@/assets/bgSmartPhone5.webp', import.meta.url).href);
 </script>
 
 <style lang="css" scoped>
+.banner-style {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
+}
 </style>
