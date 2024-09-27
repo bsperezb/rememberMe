@@ -24,7 +24,12 @@ jobs:
       - name: Build the project
         run: npm run build  # Asegúrate de que este comando construya tu proyecto
 
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Usa el token de acceso de GitHub
