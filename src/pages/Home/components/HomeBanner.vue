@@ -1,7 +1,7 @@
 <template>
   <section
     :style="{ backgroundImage: `url(${bannerRoute})` }"
-    class="bg-center bg-no-repeat h-96 banner-style"
+    class="bg-center bg-no-repeat h-96 banner-style w-full"
   >
     <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-24">
       <h1
@@ -10,13 +10,13 @@
         Crear Recordatorios de Whatsapp
       </h1>
       <p
-        class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
+        class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48 hidden sm:block"
       >
         RemembeeMe te ayudara a crear recordatorios para ti o para tus clientes, solo dejanos el núnmero de telefono
         y nosotros te recordaremos en el moemnto que desees.
       </p>
       <div
-        class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
+        class="flex  space-y-4 flex-row justify-center space-y-0 py-6 sm:py-0"
       >
         <a
           href="#"

@@ -1,5 +1,5 @@
 <template>
-    <article class="flex flex-col gap-4 items-center">
+    <article class="flex flex-col gap-4 w-full items-center">
             <home-banner/>
             <message-card/>
     </article>
