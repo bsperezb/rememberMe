@@ -30,6 +30,5 @@ jobs:
           git config --global user.email "action@github.com"
 
       - name: Deploy to GitHub Pages
-        run: npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Usa el token de acceso de GitHub
+        run: |
+          npx gh-pages -d dist --repo https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} --message "Deploy to GitHub Pages"
