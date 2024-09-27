@@ -29,4 +29,3 @@ dist-ssr
 package-lock.json
 .vite/
 .vitest/
-dist/
