@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+*.tsbuildinfo
+.vscode/
+.idea/
+package-lock.json
+.vite/
+.vitest/
+dist/
